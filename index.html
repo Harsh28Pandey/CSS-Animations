@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carausal Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .container-img {
+            width: 60vw;
+            height: 50rem;
+            border-radius: 2rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-image: url("images/nature1.jpg");
+            background-size: cover;
+            animation: gallary 20s linear infinite;
+        }
+
+        @keyframes gallary {
+            0% {
+                background-image: url("images/nature2.jpg");
+            }
+
+            20% {
+                background-image: url("images/nature3.jpg");
+            }
+
+            40% {
+                background-image: url("images/nature4.jpg");
+            }
+
+            60% {
+                background-image: url("images/nature5.jpg");
+            }
+
+            80% {
+                background-image: url("images/nature6.jpg");
+            }
+
+            100% {
+                background-image: url("images/nature1.jpg");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-img"></div>
+</body>
+
+</html>
